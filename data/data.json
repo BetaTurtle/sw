@@ -1,0 +1,71 @@
+{
+    "1001": {
+        "itemname": "HICARE JASMINE",
+        "category": "CLEANING",
+        "subs": [
+            {
+                "itemsubname": "1 LTR",
+                "sellingprice": "45",
+                "actualprice": "60"
+            },
+            {
+                "itemsubname": "500 ML",
+                "sellingprice": "25",
+                "actualprice": "50"
+            }
+        ]
+    },
+    "1002": {
+        "itemname": "HICARE LEMON",
+        "category": "CLEANING",
+        "subs": [
+            {
+                "itemsubname": "1LTR",
+                "sellingprice": "40",
+                "actualprice": ""
+            },
+            {
+                "itemsubname": "500 ML",
+                "sellingprice": "25",
+                "actualprice": "0"
+            }
+        ]
+    },
+    "1003": {
+        "itemname": "HICARE PINE",
+        "category": "CLEANING",
+        "subs": [
+            {
+                "itemsubname": "1 LTR",
+                "sellingprice": "40",
+                "actualprice": "70"
+            },
+            {
+                "itemsubname": "500 ML",
+                "sellingprice": "21",
+                "actualprice": "40"
+            }
+        ]
+    },
+    "1004": {
+        "itemname": "PAMPERS MEDIUM",
+        "category": "BABY CARE",
+        "subs": [
+            {
+                "itemsubname": "2 No.s",
+                "sellingprice": "23",
+                "actualprice": "24"
+            },
+            {
+                "itemsubname": "16 No.s",
+                "sellingprice": "169",
+                "actualprice": "192"
+            },
+            {
+                "itemsubname": "34 No.s",
+                "sellingprice": "355",
+                "actualprice": "408"
+            }
+        ]
+    }
+}
