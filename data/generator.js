@@ -1,4 +1,5 @@
 const drive = require("drive-db");
+const fs = require('fs');
 (async () => {
 
     const db = await drive({
@@ -6,7 +7,7 @@ const drive = require("drive-db");
         tab: "3",
         cache: 3600
     });
-    console.log(JSON.stringify(db));
+    // console.log(JSON.stringify(db));
 
     finaljson = {};
     db.forEach(element => {
@@ -27,7 +28,8 @@ const drive = require("drive-db");
 
 
     });
-    console.log(JSON.stringify(finaljson));
+    fileContent = JSON.stringify(finaljson);
+    fs.writeFileSync(__dirname+"/data.json", fileContent)
 
 })();
 
