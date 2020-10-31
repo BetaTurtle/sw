@@ -24,9 +24,6 @@ const fs = require('fs');
             "sellingprice": element["sellingprice"],
             "actualprice": element["actualprice"]
         });
-
-
-
     });
     fileContent = JSON.stringify(finaljson);
     fs.writeFileSync(__dirname+"/data.json", fileContent)
