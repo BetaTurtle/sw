@@ -34,3 +34,5 @@ jobs:
           echo "Hello ${{ github.event.inputs.name }}"
           git checkout main
           sh flow.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
