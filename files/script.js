@@ -5,8 +5,8 @@ function makeHTMLfromJSON(data) {
     var str = "";
     for (serial in data) {
         d = data[serial];
-        console.log(d);
-        console.log(serial);
+        // console.log(d);
+        // console.log(serial);
 
         var subs = "";
         d.subs.forEach(el => {
@@ -21,7 +21,7 @@ function makeHTMLfromJSON(data) {
               <div class="product-img-wrapper mx-auto">
                   <a class="fancybox" href="images/`+ serial + `.png"
                       title="`+ d["itemname"] + `">
-                      <img data-name="product_image" src="images/`+ serial + `.png"
+                      <img loading="lazy" data-name="product_image" src="images/`+ serial + `.png"
                           class="product-img" alt="`+ d["itemname"] + `" title="` + d["itemname"] + `">
                   </a>
               </div>
