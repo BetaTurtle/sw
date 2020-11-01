@@ -40,7 +40,7 @@ function makeHTMLfromJSON(data) {
                   `<div class="product-price text-center" style="margin-bottom: 5px">
                       <span>
                       <del class="actual_price" id="product_actual_price`+ serial + `">
-                        `+(d["subs"][0]["srp"]==d["subs"][0]["mrp"]?"":"₹ "+d["subs"][0]["mrp"])+`
+                        `+(+d["subs"][0]["srp"]>=d["subs"][0]["mrp"]?"":"₹ "+d["subs"][0]["mrp"])+`
                         </del>
                         <br>
                           <strong>
