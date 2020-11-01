@@ -18,12 +18,14 @@ const fs = require('fs');
             finaljson[element["serial"]]["itemname"] = element["itemname"]
             finaljson[element["serial"]]["category"] = element["category"]
             finaljson[element["serial"]]["unit"] = element["unit"]
+            
             finaljson[element["serial"]]["subs"] = []
         }
         finaljson[element["serial"]]["subs"].push({
             "itemsubname": element["itemsubname"],
             "srp": +element["srp"],
-            "mrp": +element["mrp"]
+            "mrp": +element["mrp"],
+            "barcode": element["barcode"]
         });
     });
     fileContent = JSON.stringify(finaljson);
