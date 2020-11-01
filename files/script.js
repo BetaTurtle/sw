@@ -1,32 +1,17 @@
-console.log("yolo")
-// fetch("data/data.json").then(function (response) {
-//     // console.log(response);
-//     response.json(function(data){
-//         console.log(data);
-//     });
-// });
-
-// fetch("data/data.json")
-//   .then(response => response.json())
-//   .then(function(data){
-//     console.log(data);
-//   });
 
 function makeHTMLfromJSON(data) {
-    // console.log(data);
-    // console.log(data[0]);
     d = data[0];
 
     var str = "";
     for (serial in data) {
         d = data[serial];
-        // console.log(d);
-        // console.log(serial);
+        console.log(d);
+        console.log(serial);
 
         var subs = "";
         d.subs.forEach(el => {
 
-            subs += `<option data-price="` + el["sellingprice"] + `" data-sale="` + el["sellingprice"] + `" data-actual="₹ ` + el["actualprice"] + `"
+            subs += `<option data-price="` + el["srp"] + `" data-sale="` + el["srp"] + `" data-actual="₹ ` + el["mrp"] + `"
             data-variant="`+ d["itemname"] + ` - ` + el["itemsubname"] + `" data-product_id="` + serial +`" >` + el["itemsubname"] + `</option>`;
         });
 
@@ -55,11 +40,11 @@ function makeHTMLfromJSON(data) {
                   <div class="product-price text-center" style="margin-bottom: 5px">
                       <span>
                       <del class="actual_price" id="product_actual_price`+ serial + `">
-                        `+(d["subs"][0]["actualprice"]>0?"₹ "+d["subs"][0]["actualprice"]:"")+`
+                        `+(d["subs"][0]["srp"]==d["subs"][0]["mrp"]?"":"₹ "+d["subs"][0]["mrp"])+`
                         </del>
                         <br>
                           <strong>
-                              ₹ <span class="price" id="product_price`+ serial + `">` + d["subs"][0]["sellingprice"] + `<span>
+                              ₹ <span class="price" id="product_price`+ serial + `">` + d["subs"][0]["srp"] + `<span>
                                   </span></span></strong>
                           x
                       </span>
@@ -67,7 +52,7 @@ function makeHTMLfromJSON(data) {
                           name="product_quantity" min="0.1" value="1" type="number">
                   </div>
                   <input id="hidden_product_name`+ serial + `" name="product_name" value="` + d["itemname"] + ` - ` + d["subs"][0]["itemsubname"] + `" type="hidden">
-                  <input id="hidden_product_price`+ serial + `" name="product_price" value="` + d["subs"][0]["actualprice"] + `" type="hidden">
+                  <input id="hidden_product_price`+ serial + `" name="product_price" value="` + d["subs"][0]["mrp"] + `" type="hidden">
                   <input name="product_id" value="`+ serial + `" type="hidden">
                   <div class="cart-add-btn-wrapper text-center">
                       <button class="btn btn-success btn-add-cart sc-add-to-cart btn-xs" data-pname="`+ d["itemname"] + `"><i

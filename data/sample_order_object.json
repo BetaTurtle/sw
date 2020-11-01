@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "product_image": "images/1002.png",
+      "product_quantity": 2,
+      "product_name": "HICARE LEMON - 1LTR",
+      "product_price": "0",
+      "product_id": "1002",
+      "unique_key": 1604204720848
+    },
+    {
+      "product_image": "images/1004.png",
+      "product_quantity": 2,
+      "product_name": "PAMPERS MEDIUM - 2 No.s",
+      "product_price": "24",
+      "product_id": "1004",
+      "unique_key": 1604204727607
+    },
+    {
+      "product_image": "images/1003.png",
+      "product_quantity": 2,
+      "product_name": "HICARE PINE - 1 LTR",
+      "product_price": "70",
+      "product_id": "1003",
+      "unique_key": 1604204728477
+    },
+    {
+      "product_image": "images/1001.png",
+      "product_quantity": 2,
+      "product_name": "HICARE JASMINE - 1 LTR",
+      "product_price": "60",
+      "product_id": "1001",
+      "unique_key": 1604204729472
+    }
+  ],
+  "total": "₹348.00",
+  "order_note": "",
+  "extra_charge": "40",
+  "delivery": {
+    "option": "Home Delivery",
+    "identifier": ""
+  },
+  "name": "kunjappu",
+  "phone": "1234567890",
+  "address": "asdfas",
+  "zip": "",
+  "location": "",
+  "hook": 0,
+  "pay_online": false,
+  "shop_id": "907",
+  "_token": "nOt43AIWiyVr0X4GudEh8lBCUSRPgy416Gy2L0Y0"
+}

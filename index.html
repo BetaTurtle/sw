@@ -234,7 +234,7 @@
                                     <input id="extra_charge" type="hidden">
                                     <input id="phone" value="918590355049" type="hidden">
                                     <input id="identifier" value="" type="hidden">
-                                    <input id="uid" value="907" type="hidden">
+                                    <input id="uid" value="143" type="hidden">
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label for="cname">Name</label>
@@ -418,7 +418,7 @@
                             var option = $(this).find(':selected');
                             let variant_price = option.data('price');
                             let actual = option.data('actual').split(" ");
-                            let actual_price = actual[1] > 0 ? option.data('actual') : '';
+                            let actual_price = actual[1] > variant_price ? option.data('actual') : '';
                             let id = option.data('product_id');
 
                             $('#product_price' + id).html(variant_price);

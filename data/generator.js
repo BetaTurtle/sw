@@ -21,8 +21,8 @@ const fs = require('fs');
         }
         finaljson[element["serial"]]["subs"].push({
             "itemsubname": element["itemsubname"],
-            "sellingprice": element["sellingprice"],
-            "actualprice": element["actualprice"]
+            "srp": +element["srp"],
+            "mrp": +element["mrp"]
         });
     });
     fileContent = JSON.stringify(finaljson);
