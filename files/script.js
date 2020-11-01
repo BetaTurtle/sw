@@ -29,15 +29,15 @@ function makeHTMLfromJSON(data) {
                   <p class="text-center">`+ d["itemname"] + `</p>
               </div>
               <div class="mt-auto">
-                  <div class="variation_wrapper">
+                  `+((d.subs.length > 1)?`<div class="variation_wrapper">
                       <div class="form-group">
-                          <label>QTY</label>
+                          <label>`+d["unit"]+`</label>
                           <select class="form-control variation">
                               `+ subs + `
                           </select>
                       </div>
-                  </div>
-                  <div class="product-price text-center" style="margin-bottom: 5px">
+                  </div>`:"")+
+                  `<div class="product-price text-center" style="margin-bottom: 5px">
                       <span>
                       <del class="actual_price" id="product_actual_price`+ serial + `">
                         `+(d["subs"][0]["srp"]==d["subs"][0]["mrp"]?"":"₹ "+d["subs"][0]["mrp"])+`

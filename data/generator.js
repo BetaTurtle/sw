@@ -17,6 +17,7 @@ const fs = require('fs');
             finaljson[element["serial"]] = {}
             finaljson[element["serial"]]["itemname"] = element["itemname"]
             finaljson[element["serial"]]["category"] = element["category"]
+            finaljson[element["serial"]]["unit"] = element["unit"]
             finaljson[element["serial"]]["subs"] = []
         }
         finaljson[element["serial"]]["subs"].push({
