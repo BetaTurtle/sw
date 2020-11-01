@@ -52,7 +52,7 @@ function makeHTMLfromJSON(data) {
                           name="product_quantity" min="0.1" value="1" type="number">
                   </div>
                   <input id="hidden_product_name`+ serial + `" name="product_name" value="` + d["itemname"] + ` - ` + d["subs"][0]["itemsubname"] + `" type="hidden">
-                  <input id="hidden_product_price`+ serial + `" name="product_price" value="` + d["subs"][0]["mrp"] + `" type="hidden">
+                  <input id="hidden_product_price`+ serial + `" name="product_price" value="` + d["subs"][0]["srp"] + `" type="hidden">
                   <input name="product_id" value="`+ serial + `" type="hidden">
                   <div class="cart-add-btn-wrapper text-center">
                       <button class="btn btn-success btn-add-cart sc-add-to-cart btn-xs" data-pname="`+ d["itemname"] + `"><i
