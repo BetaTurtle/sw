@@ -1,3 +1,8 @@
+function imgError(image) {
+    image.onerror = "";
+    image.src = "images/404.png";
+    return true;
+}
 
 function makeHTMLfromJSON(data) {
     d = data[0];
@@ -22,7 +27,7 @@ function makeHTMLfromJSON(data) {
                   <a class="fancybox" href="images/`+ serial + `.png"
                       title="`+ d["itemname"] + `">
                       <img loading="lazy" data-name="product_image" src="images/`+ serial + `.png"
-                          class="product-img" alt="`+ d["itemname"] + `" title="` + d["itemname"] + `">
+                          class="product-img" alt="`+ d["itemname"] + `" title="` + d["itemname"] + `" onerror="imgError(this);">
                   </a>
               </div>
               <div class="product-name">
