@@ -108,21 +108,32 @@ function formatMessage(items, total, price, order_note, extra_charge, identifier
 } // End of formatMessage
 
 function processData(data, message, shop_phone) {
-    sendToWhatsApp("randomtoken", message, shop_phone);
-    return;
-    $.ajax({
-        method: 'POST',
-        url: window.location.pathname,
-        data: data,
-        success: function(res) {
-            sendToWhatsApp(res.user_token, message, shop_phone);
-        },
-        error: function(e) {
+    console.log("will send to firebase");
+    console.log(db);
+    db.collection("orders").add(data)
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+    sendToWhatsApp(docRef.id, message, shop_phone);
 
-            console.log(e);
-            alert("Something went wrong!!");
-        }
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
     });
+
+    return;
+    // $.ajax({
+    //     method: 'POST',
+    //     url: window.location.pathname,
+    //     data: data,
+    //     success: function(res) {
+    //         sendToWhatsApp(res.user_token, message, shop_phone);
+    //     },
+    //     error: function(e) {
+
+    //         console.log(e);
+    //         alert("Something went wrong!!");
+    //     }
+    // });
 } // End of formatMessage
 
 function sendToWhatsApp(token, message, wa_number) {

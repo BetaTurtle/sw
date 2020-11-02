@@ -71,8 +71,7 @@
     <header>
         <div class="container">
             <div class="brand-logo">
-                <img src="images/logo.png" class="d-inline-block align-top product_img"
-                    alt="">
+                <img src="images/logo.png" class="d-inline-block align-top product_img" alt="">
             </div>
             <div class="brand-name text-center">
                 <span class="">SafeWay</span>
@@ -117,13 +116,16 @@
                             <a class="nav-link category-link" data-category="GROCERY">GROCERY<br>പലചരക്ക്</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link category-link" data-category="SNACKS AND DRINKS">SNACKS AND DRINKS<br>സ്നാക്സും ഡ്രിങ്കുകളും</a>
+                            <a class="nav-link category-link" data-category="SNACKS AND DRINKS">SNACKS AND
+                                DRINKS<br>സ്നാക്സും ഡ്രിങ്കുകളും</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link category-link" data-category="CAKES AND BAKES">CAKES AND BAKES<br>കേക്കുകളും ബേക്കുകളും</a>
+                            <a class="nav-link category-link" data-category="CAKES AND BAKES">CAKES AND
+                                BAKES<br>കേക്കുകളും ബേക്കുകളും</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link category-link" data-category="HOME NEEDS">HOME NEEDS<br>വീട്ടാവശ്യങ്ങൾ </a>
+                            <a class="nav-link category-link" data-category="HOME NEEDS">HOME NEEDS<br>വീട്ടാവശ്യങ്ങൾ
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link category-link" data-category="BABY CARE">BABY CARE<br>കുട്ടികൾക്ക് </a>
@@ -132,7 +134,8 @@
                             <a class="nav-link category-link" data-category="STATIONARY">STATIONARY<br>സ്റ്റേഷനറി</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link category-link" data-category="CLEANING MATERIALS">CLEANING<br>ക്ലീനിംഗ്</a>
+                            <a class="nav-link category-link"
+                                data-category="CLEANING MATERIALS">CLEANING<br>ക്ലീനിംഗ്</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link category-link" data-category="COSMETICS">COSMETICS<br>കോസ്മെറ്റിക്സ്</a>
@@ -306,7 +309,32 @@
     </footer> -->
         <!-- end  footer section-->
 
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyA89Ry51DT28yrjSGJHGe9-zTYLCZO0zCY",
+                authDomain: "hyperlocal-49c9a.firebaseapp.com",
+                databaseURL: "https://hyperlocal-49c9a.firebaseio.com",
+                projectId: "hyperlocal-49c9a",
+                storageBucket: "hyperlocal-49c9a.appspot.com",
+                messagingSenderId: "390703634211",
+                appId: "1:390703634211:web:8a837a5ce819f761d85e96"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            var db = firebase.firestore();
+            console.log("this is the database");
+            console.log(db);
+        </script>
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
