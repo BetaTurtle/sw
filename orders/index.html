@@ -86,7 +86,7 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
                                     <table>
                                         <tbody>`+ table + ` </tbody>
                                     </table>
-                                    <p>Delivery charge: ₹`+ data["extra_charge"] + `</p>
+                                    <p>Delivery charge: ₹`+ int(+data["extra_charge"]) + `</p>
                                     <p>Total Payable: `+ data["total"] + `</p>
                                     <p>contact Safeway for any queries: <a href="tel:+919745067846">9745067846</a></p>
                                 </div>`;

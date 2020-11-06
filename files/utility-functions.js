@@ -102,7 +102,7 @@ function formatMessage(items, total, price, order_note, extra_charge, identifier
     else
         var message = delivery.val() == 1 ? '*(' + option + ' - ' + identifier + ')*\n' : '*(' + identifier + ')*\n';
 
-    message = message + '\n' + items.item_str + total_str  + '\n' + note_str + '\n*_Name:_*\n' + name  + '\n*_Mobile:_*\n' + phone + address_str + '\n\n===============\nPlease confirm via reply.';
+    message = message + '\n' + items.item_str + total_str  + '\n' + note_str + '\n*_Name:_*\n' + name  + '\n*_Mobile:_*\n' + phone + address_str + '\n\n===============\n';
 
     return message;
 } // End of formatMessage
@@ -139,7 +139,7 @@ function processData(data, message, shop_phone) {
 function sendToWhatsApp(token, message, wa_number) {
 
     console.log("*New Order : #" + (token) + "*\n" + message);
-    url = "https://api.whatsapp.com/send?phone="+ wa_number + "&text=" + encodeURL("*New Order : #" + (token) + "*\n" + message);
+    url = "https://api.whatsapp.com/send?phone="+ wa_number + "&text=" + encodeURL("*New Order*\n https://safewaydelivery.in/orders/#" + (token) + "\n" + message);
     // window.open(url, '_blank');
     window.location.assign(url);
 } // End of sendToWhatsApp
