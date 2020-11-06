@@ -28,7 +28,7 @@ exports.documentCreate = functions.firestore
         for (var i in change.data().items) {
             content += change.data().items[i].product_name + " × " + change.data().items[i].product_quantity + "\n"
         }
-        content += "\n*Delivery charge:* ₹" + int(+change.data().extra_charge);
+        content += "\n*Delivery charge:* ₹" + (+change.data().extra_charge);
         content += "\n*Total: " + change.data().total + "*";
         bot.telegram.sendMessage(functions.config().bot.chat, message + content, markup);
     });
