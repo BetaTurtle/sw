@@ -16,5 +16,5 @@ exports.documentCreate = functions.firestore
     .document('orders/{documentId}')
     .onCreate((change, context) => {
         const docId = context.params.documentId
-        bot.telegram.sendMessage(functions.config().bot.chat, '🛒 New order placed:\nhttps://betaturtle.github.io/sw/orders/#' + docId);
+        bot.telegram.sendMessage(functions.config().bot.chat, '🛒 New order placed:\nhttps://safewaydelivery.in/orders/#' + docId);
     });

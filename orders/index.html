@@ -4,13 +4,14 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Safeway Delivery Order Detail</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 
 <body>
-    <div id="content">content here</div>
+    <div id="content">...</div>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
@@ -22,37 +23,81 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
     <script>
         url = window.location.href;
         var orderid = url.split("#")[1];
-        // alert(orderid);
+        if (orderid) {
+            var firebaseConfig = {
+                apiKey: "AIzaSyA89Ry51DT28yrjSGJHGe9-zTYLCZO0zCY",
+                authDomain: "hyperlocal-49c9a.firebaseapp.com",
+                databaseURL: "https://hyperlocal-49c9a.firebaseio.com",
+                projectId: "hyperlocal-49c9a",
+                storageBucket: "hyperlocal-49c9a.appspot.com",
+                messagingSenderId: "390703634211",
+                appId: "1:390703634211:web:8a837a5ce819f761d85e96"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
 
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyA89Ry51DT28yrjSGJHGe9-zTYLCZO0zCY",
-            authDomain: "hyperlocal-49c9a.firebaseapp.com",
-            databaseURL: "https://hyperlocal-49c9a.firebaseio.com",
-            projectId: "hyperlocal-49c9a",
-            storageBucket: "hyperlocal-49c9a.appspot.com",
-            messagingSenderId: "390703634211",
-            appId: "1:390703634211:web:8a837a5ce819f761d85e96"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+            var db = firebase.firestore();
+            console.log("this is the database");
+            console.log(db);
+            var orders = db.collection("orders");
+            db.collection("orders").doc(orderid)
+                .get()
+                .then(function (doc) {
+                    var data = doc.data();
+                    console.log(data);
+                    var cont = document.getElementById("content");
+                    console.log(cont);
+                    table = ""
+                    data.items.forEach(element => {
+                        console.log(element);
+                        table += `<tr>
+                            <td><img src="/`+ element["product_image"] + `" width="50" height="50"><td>
+                            <td>`+ element["product_name"] + `<td>
+                            <td>`+ element["product_quantity"] + " × ₹" + element["product_price"] + ` = <td>
+                            <td>₹`+ (element["product_quantity"] * element["product_price"]) + `<td>
+                        </tr>`
+                    });
+                    divcontent = `<div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Name<b></td>
+                                                <td>`+ data["name"] + `</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phone</td>
+                                                <td><a href="tel:+91`+ data["phone"] + `">` + data["phone"] + `</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address</td>
+                                                <td>`+ (data["address"].replaceAll("\n", "<br>")) + `</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pin Code</td>
+                                                <td>`+ data["zip"] + `</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Note</td>
+                                                <td>`+ (data["order_note"].replaceAll("\n", "<br>")) + `</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Items</p>
+                                    <table>
+                                        <tbody>`+ table + ` </tbody>
+                                    </table>
+                                    <p>Delivery charge: ₹`+ data["extra_charge"] + `</p>
+                                    <p>Total Payable: `+ data["total"] + `</p>
+                                    <p>contact Safeway for any queries: <a href="tel:+919745067846">9745067846</a></p>
+                                </div>`;
 
-        var db = firebase.firestore();
-        console.log("this is the database");
-        console.log(db);
-        var orders = db.collection("orders");
-        db.collection("orders").doc(orderid)
-            .get()
-            .then(function (doc) {
-                var data = doc.data();
-                console.log(data);
-                var cont = document.getElementById("content");
-                console.log(cont);
-                cont.innerHTML = JSON.stringify(data);
-            })
-            .catch(function (error) {
-                console.log("Error getting documents: ", error);
-            });
+                    cont.innerHTML = (divcontent);
+                })
+                .catch(function (error) {
+                    console.log("Error getting documents: ", error);
+                });
+        }
+
     </script>
 
 </body>
