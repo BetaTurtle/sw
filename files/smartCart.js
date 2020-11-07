@@ -176,22 +176,7 @@
                 });
             });
             
-            // Item quantity change event
-            /* var decimal_qty = this.options.lang.decimal_qty;
-            $(this.cart_element).on( "change", '.sc-cart-item-qty', function(e) {
-                e.preventDefault();
-                console.log(decimal_qty);
-                var val = $(this).val();
-                var valid = true;
-                // Check if negetive value
-                if (val < 1) valid = false;
-                if (!decimal_qty){
-
-                    if (!valid || val % 1 > 0) valid = false;
-                }
-                if (!valid) $(this).val(1);
-                mi._updateCartQuantity($(this).parents('.sc-cart-item').data('unique-key'), $(this).val());
-            }); */
+           
 
             // Item quantity change event
             var decimal_qty = this.options.lang.decimal_qty;
