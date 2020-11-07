@@ -109,7 +109,7 @@ function formatMessage(items, total, price, order_note, extra_charge, identifier
 
 function processData(data, message, shop_phone) {
     console.log("will send to firebase");
-    console.log(db);
+    // console.log(db);
     db.collection("orders").add(data)
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
