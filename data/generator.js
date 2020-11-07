@@ -1,5 +1,21 @@
 const drive = require("drive-db");
 const fs = require('fs');
+const fetch = require('node-fetch');
+
+const downloadFile = (async (url, path) => {
+    const res = await fetch(url);
+    if (res.status != 200){
+        return;
+    }
+    const fileStream = fs.createWriteStream(path);
+    await new Promise((resolve, reject) => {
+        res.body.pipe(fileStream);
+        res.body.on("error", reject);
+        fileStream.on("finish", resolve);
+      });
+  });
+
+
 (async () => {
 
     const db = await drive({
@@ -13,6 +29,9 @@ const fs = require('fs');
     db.forEach(element => {
         // console.log(element);
         // console.log(finaljson);
+        if(!(element["url"].includes("betaturtle") || element["url"].includes("safeway"))){
+            downloadFile(element["url"], "/home/neo/Git/sw/images/"+element["serial"]+".png");
+        }
         if (!(element["serial"] in finaljson)) {
             finaljson[element["serial"]] = {}
             finaljson[element["serial"]]["itemname"] = element["itemname"]
