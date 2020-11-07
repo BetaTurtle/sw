@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 const downloadFile = (async (url, path) => {
     const res = await fetch(url);
-    if (res.status != 200){
+    if (res.status != 200) {
         return;
     }
     const fileStream = fs.createWriteStream(path);
@@ -12,8 +12,8 @@ const downloadFile = (async (url, path) => {
         res.body.pipe(fileStream);
         res.body.on("error", reject);
         fileStream.on("finish", resolve);
-      });
-  });
+    });
+});
 
 
 (async () => {
@@ -29,26 +29,29 @@ const downloadFile = (async (url, path) => {
     db.forEach(element => {
         // console.log(element);
         // console.log(finaljson);
-        if(!(element["url"].includes("betaturtle") || element["url"].includes("safeway"))){
-            downloadFile(element["url"], "/home/neo/Git/sw/images/"+element["serial"]+".png");
+        if (!(element["url"].includes("betaturtle") || element["url"].includes("safeway"))) {
+            downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
         }
-        if (!(element["serial"] in finaljson)) {
-            finaljson[element["serial"]] = {}
-            finaljson[element["serial"]]["itemname"] = element["itemname"]
-            finaljson[element["serial"]]["category"] = element["category"]
-            finaljson[element["serial"]]["unit"] = element["unit"]
-            
-            finaljson[element["serial"]]["subs"] = []
+        if (element["available"] == 1) {
+            if (!(element["serial"] in finaljson)) {
+                finaljson[element["serial"]] = {}
+                finaljson[element["serial"]]["itemname"] = element["itemname"]
+                finaljson[element["serial"]]["category"] = element["category"]
+                finaljson[element["serial"]]["unit"] = element["unit"]
+
+                finaljson[element["serial"]]["subs"] = []
+            }
+            finaljson[element["serial"]]["subs"].push({
+                "itemsubname": element["itemsubname"],
+                "srp": +element["srp"],
+                "mrp": +element["mrp"],
+                "barcode": element["barcode"]
+            });
         }
-        finaljson[element["serial"]]["subs"].push({
-            "itemsubname": element["itemsubname"],
-            "srp": +element["srp"],
-            "mrp": +element["mrp"],
-            "barcode": element["barcode"]
-        });
+
     });
     fileContent = JSON.stringify(finaljson);
-    fs.writeFileSync(__dirname+"/data.json", fileContent)
+    fs.writeFileSync(__dirname + "/data.json", fileContent)
 
 })();
 
