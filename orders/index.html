@@ -79,17 +79,20 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
                     var cont = document.getElementById("content");
                     console.log(cont);
                     table = ""
+                    var count = 1;
                     data.items.forEach(element => {
                         console.log(element);
                         table += `<tr>
+                            <td>`+ count + `<td>
                             <td><img src="/`+ element["product_image"] + `" width="50" height="50"><td>
                             <td>`+ element["product_name"] + `<td>
                             <td>`+ element["product_quantity"] + " × ₹" + element["product_price"] + ` = <td>
                             <td>₹`+ (element["product_quantity"] * element["product_price"]) + `<td>
-                        </tr>`
+                        </tr>`;
+                        count++;
                     });
                     divcontent = `<div>
-                                    <div style="text-align: right;">`+new Date(data["time"]).toLocaleString()+`</div>
+                                    <div style="text-align: right;">`+ new Date(data["time"]).toLocaleString() + `</div>
                                     <table>
                                         <tbody>
                                             <tr>
