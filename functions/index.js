@@ -30,5 +30,6 @@ exports.documentCreate = functions.firestore
         }
         content += "\n*Delivery charge:* ₹" + (+change.data().extra_charge);
         content += "\n*Total: " + change.data().total + "*";
+        bot.telegram.sendMessage(functions.config().bot.chat, message, markup);
         bot.telegram.sendMessage(functions.config().bot.chat, message + content, markup);
     });
