@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNKH17D4R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -25,17 +24,12 @@
 <body>
     <header>
         <div class="container">
-            <!-- <div class="brand-logo">
-                <img src="images/logo.png" class="d-inline-block align-top product_img" alt="">
-            </div> -->
             <div class="brand-name text-center">
                 <span class="fontsforweb_fontid_2802"><strong>SAFEWAY</strong></span>
             </div>
         </div>
     </header>
-    <!-- end header -->
     <main>
-        <!-- start About content -->
         <section id="about">
             <div class="container text-center">
                 <div class="navbar sub">
@@ -55,13 +49,11 @@
         </footer>
     </main>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-https://firebase.google.com/docs/web/setup#available-libraries -->
+
 
     <script>
         url = window.location.href;
@@ -76,7 +68,6 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
                 messagingSenderId: "390703634211",
                 appId: "1:390703634211:web:8a837a5ce819f761d85e96"
             };
-            // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             var db = firebase.firestore();
             var orders = db.collection("orders");
@@ -84,13 +75,10 @@ https://firebase.google.com/docs/web/setup#available-libraries -->
                 .get()
                 .then(function (doc) {
                     var data = doc.data();
-                    // console.log(data);
                     var cont = document.getElementById("content");
-                    // console.log(cont);
                     table = ""
                     var count = 1;
                     data.items.forEach(element => {
-                        // console.log(element);
                         table += `<tr>
                             <td>`+ count + `<td>
                             <td><img src="/`+ element["product_image"] + `" width="50" height="50"><td>
