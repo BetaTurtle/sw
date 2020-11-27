@@ -29,7 +29,7 @@ const downloadFile = (async (url, path) => {
     db.forEach(element => {
         // console.log(element);
         // console.log(finaljson);
-        if (!(element["url"].includes("betaturtle") || element["url"].includes("safeway"))) {
+        if (!(element["url"].includes("safewaydelivery.in") || element["url"].includes("safeway"))) {
             downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
         }
         if (element["available"] == 1) {
