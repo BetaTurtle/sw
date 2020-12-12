@@ -15,23 +15,38 @@ const downloadFile = (async (url, path) => {
     });
 });
 
+const sortObjByKey = (value) => {
+    return (typeof value === 'object')
+        ? (Array.isArray(value)
+            ? value.map(sortObjByKey)
+            : Object.keys(value).sort().reduce(
+                (o, key) => {
+                    const v = value[key]
+                    o[key] = sortObjByKey(v)
+                    return o
+                }, {})
+        )
+        : value
+}
 
 (async () => {
 
     const db = await drive({
         sheet: "12v8_ns7epT7yypNSuIaEIjzRSdfsb7Nn968H2ncYcN0",
-        tab: "3",
+        tab: "ompebo9",
         cache: 3600
     });
+    console.log("Fetch done");
     // console.log(JSON.stringify(db));
 
     finaljson = {};
     db.forEach(element => {
         // console.log(element);
         // console.log(finaljson);
-        if (!(element["url"].includes("safewaydelivery.in") || element["url"].includes("safeway"))) {
-            downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
-        }
+        // if (!(element["url"].includes("safewaydelivery.in") || element["url"].includes("safeway"))) {
+        //     console.log("downloading "+element["serial"]);
+        //     downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
+        // }
         if (element["available"] == 1) {
             if (!(element["serial"] in finaljson)) {
                 finaljson[element["serial"]] = {}
@@ -50,7 +65,9 @@ const downloadFile = (async (url, path) => {
         }
 
     });
-    fileContent = JSON.stringify(finaljson);
+
+    // fileContent = JSON.stringify(finaljson, null, '\t')
+    fileContent = JSON.stringify(sortObjByKey(finaljson), null, '\t')
     fs.writeFileSync(__dirname + "/data.json", fileContent)
 
 })();
