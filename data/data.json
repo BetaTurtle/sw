@@ -460,12 +460,6 @@
 				"itemsubname": "",
 				"mrp": 900,
 				"srp": 850
-			},
-			{
-				"barcode": "71",
-				"itemsubname": "",
-				"mrp": 900,
-				"srp": 850
 			}
 		],
 		"unit": ""
@@ -498,7 +492,7 @@
 	},
 	"76": {
 		"category": "GROCERY",
-		"itemname": "NADAN MALLIPODI LOSE",
+		"itemname": "NADAN MALLIPODI LOOSE",
 		"subs": [
 			{
 				"barcode": "76",

@@ -43,10 +43,10 @@ const sortObjByKey = (value) => {
     db.forEach(element => {
         // console.log(element);
         // console.log(finaljson);
-        // if (!(element["url"].includes("safewaydelivery.in") || element["url"].includes("safeway"))) {
-        //     console.log("downloading "+element["serial"]);
-        //     downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
-        // }
+        if (!(element["url"].includes("safewaydelivery.in") || element["url"].includes("safeway"))) {
+            console.log("downloading "+element["serial"]);
+            downloadFile(element["url"], "/home/neo/Git/sw/images/" + element["serial"] + ".png");
+        }
         if (element["available"] == 1) {
             if (!(element["serial"] in finaljson)) {
                 finaljson[element["serial"]] = {}
