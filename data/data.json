@@ -40,19 +40,13 @@
 	},
 	"30": {
 		"category": "GROCERY",
-		"itemname": "MAMBAYER",
+		"itemname": "MAMBAYAR 1kg",
 		"subs": [
 			{
 				"barcode": "30",
-				"itemsubname": "1 kg",
+				"itemsubname": "",
 				"mrp": 95,
 				"srp": 88
-			},
-			{
-				"barcode": "1146",
-				"itemsubname": "250 g",
-				"mrp": 23,
-				"srp": 22
 			}
 		],
 		"unit": ""
@@ -274,12 +268,6 @@
 				"itemsubname": "",
 				"mrp": 60,
 				"srp": 55
-			},
-			{
-				"barcode": "55",
-				"itemsubname": "",
-				"mrp": 60,
-				"srp": 55
 			}
 		],
 		"unit": ""
@@ -371,35 +359,17 @@
 				"itemsubname": "",
 				"mrp": 400,
 				"srp": 350
-			},
-			{
-				"barcode": "66",
-				"itemsubname": "",
-				"mrp": 400,
-				"srp": 350
 			}
 		],
 		"unit": ""
 	},
 	"67": {
 		"category": "GROCERY",
-		"itemname": "JADHI PATHRI",
+		"itemname": "JATHIPATHRI 50g",
 		"subs": [
 			{
 				"barcode": "67",
 				"itemsubname": "",
-				"mrp": 2400,
-				"srp": 2310
-			},
-			{
-				"barcode": "67",
-				"itemsubname": "1 kg",
-				"mrp": 2400,
-				"srp": 2310
-			},
-			{
-				"barcode": "67",
-				"itemsubname": "50 gm",
 				"mrp": 120,
 				"srp": 115.5
 			}
@@ -423,12 +393,6 @@
 		"category": "GROCERY",
 		"itemname": "KASKAS WHITE",
 		"subs": [
-			{
-				"barcode": "69",
-				"itemsubname": "",
-				"mrp": 1500,
-				"srp": 1430
-			},
 			{
 				"barcode": "69",
 				"itemsubname": "",
@@ -596,32 +560,6 @@
 				"itemsubname": "",
 				"mrp": 33,
 				"srp": 31
-			}
-		],
-		"unit": ""
-	},
-	"91": {
-		"category": "GROCERY",
-		"itemname": "POSTMAN WHITE",
-		"subs": [
-			{
-				"barcode": "91",
-				"itemsubname": "",
-				"mrp": 120,
-				"srp": 110
-			}
-		],
-		"unit": ""
-	},
-	"92": {
-		"category": "GROCERY",
-		"itemname": "POSTMAN GOLD SELLA",
-		"subs": [
-			{
-				"barcode": "92",
-				"itemsubname": "",
-				"mrp": 130,
-				"srp": 115
 			}
 		],
 		"unit": ""
@@ -844,12 +782,6 @@
 		"category": "GROCERY",
 		"itemname": "PATTA ELA ( BAY LEAF",
 		"subs": [
-			{
-				"barcode": "151",
-				"itemsubname": "",
-				"mrp": 400,
-				"srp": 400
-			},
 			{
 				"barcode": "151",
 				"itemsubname": "",
@@ -1348,12 +1280,6 @@
 				"itemsubname": "",
 				"mrp": 22.5,
 				"srp": 22
-			},
-			{
-				"barcode": "1161",
-				"itemsubname": "",
-				"mrp": 22.5,
-				"srp": 22
 			}
 		],
 		"unit": ""
@@ -1483,12 +1409,6 @@
 				"itemsubname": "1 kg",
 				"mrp": 45,
 				"srp": 38
-			},
-			{
-				"barcode": "1201",
-				"itemsubname": "500 g",
-				"mrp": 23,
-				"srp": 19
 			}
 		],
 		"unit": ""
@@ -1562,12 +1482,6 @@
 		"category": "GROCERY",
 		"itemname": "GREEN PEAS",
 		"subs": [
-			{
-				"barcode": "1225",
-				"itemsubname": "1 kg",
-				"mrp": 115,
-				"srp": 105
-			},
 			{
 				"barcode": "1223",
 				"itemsubname": "250 g",
@@ -2132,16 +2046,16 @@
 				"srp": 19
 			},
 			{
-				"barcode": "1325",
-				"itemsubname": "1.5 kg",
-				"mrp": 60,
-				"srp": 55
-			},
-			{
 				"barcode": "1323",
 				"itemsubname": "750 gm",
 				"mrp": 32,
 				"srp": 29
+			},
+			{
+				"barcode": "1325",
+				"itemsubname": "1.5 kg",
+				"mrp": 60,
+				"srp": 55
 			}
 		],
 		"unit": ""
@@ -2150,12 +2064,6 @@
 		"category": "GROCERY",
 		"itemname": "SN SEMIYA PAYASAM MIX 200G",
 		"subs": [
-			{
-				"barcode": "1326",
-				"itemsubname": "",
-				"mrp": 45.5,
-				"srp": 44
-			},
 			{
 				"barcode": "1326",
 				"itemsubname": "",
@@ -2238,14 +2146,8 @@
 	},
 	"1334": {
 		"category": "GROCERY",
-		"itemname": "SN CUMIN POWDER",
+		"itemname": "SN CUMIN POWDER 50 GRM",
 		"subs": [
-			{
-				"barcode": "1334",
-				"itemsubname": "50 g",
-				"mrp": 21.5,
-				"srp": 20
-			},
 			{
 				"barcode": "1334",
 				"itemsubname": "",
@@ -2998,12 +2900,6 @@
 		"category": "GROCERY",
 		"itemname": "SOYA SAUSE 200GM",
 		"subs": [
-			{
-				"barcode": "1475",
-				"itemsubname": "",
-				"mrp": 52,
-				"srp": 52
-			},
 			{
 				"barcode": "1475",
 				"itemsubname": "",
@@ -3891,16 +3787,16 @@
 				"srp": 25
 			},
 			{
-				"barcode": "3660",
-				"itemsubname": "200 mL",
-				"mrp": 50,
-				"srp": 45
-			},
-			{
 				"barcode": "3659",
 				"itemsubname": "500 mL",
 				"mrp": 116,
 				"srp": 102
+			},
+			{
+				"barcode": "3660",
+				"itemsubname": "200 mL",
+				"mrp": 50,
+				"srp": 45
 			},
 			{
 				"barcode": "3661",
@@ -4030,14 +3926,8 @@
 	},
 	"1663": {
 		"category": "GROCERY",
-		"itemname": "KERAM COCONUT OIL",
+		"itemname": "KERAM COCONUT OIL ",
 		"subs": [
-			{
-				"barcode": "1662",
-				"itemsubname": "500 mL",
-				"mrp": 110,
-				"srp": 95
-			},
 			{
 				"barcode": "1663",
 				"itemsubname": "1 L",
@@ -4178,12 +4068,6 @@
 		"itemname": "TURMERIC POWDER",
 		"subs": [
 			{
-				"barcode": "1697",
-				"itemsubname": "100 g",
-				"mrp": 20.5,
-				"srp": 20
-			},
-			{
 				"barcode": "1698",
 				"itemsubname": "250 g",
 				"mrp": 50.5,
@@ -4194,6 +4078,12 @@
 				"itemsubname": "500 g",
 				"mrp": 99.5,
 				"srp": 99
+			},
+			{
+				"barcode": "1697",
+				"itemsubname": "100 g",
+				"mrp": 20.5,
+				"srp": 20
 			}
 		],
 		"unit": ""
@@ -4285,12 +4175,6 @@
 				"itemsubname": "",
 				"mrp": 39.5,
 				"srp": 39
-			},
-			{
-				"barcode": "1709",
-				"itemsubname": "",
-				"mrp": 39.5,
-				"srp": 39
 			}
 		],
 		"unit": ""
@@ -4304,12 +4188,6 @@
 				"itemsubname": "",
 				"mrp": 39,
 				"srp": 39
-			},
-			{
-				"barcode": "1711",
-				"itemsubname": "",
-				"mrp": 39,
-				"srp": 39
 			}
 		],
 		"unit": ""
@@ -4318,12 +4196,6 @@
 		"category": "GROCERY",
 		"itemname": "EASTERN SAMBAR PDR 25G",
 		"subs": [
-			{
-				"barcode": "1713",
-				"itemsubname": "",
-				"mrp": 10,
-				"srp": 10
-			},
 			{
 				"barcode": "1713",
 				"itemsubname": "",
@@ -4519,16 +4391,16 @@
 		"itemname": "THANIMA PUTTUPODI",
 		"subs": [
 			{
-				"barcode": "1742",
-				"itemsubname": "1 kg",
-				"mrp": 64,
-				"srp": 54
-			},
-			{
 				"barcode": "1743",
 				"itemsubname": "500 g",
 				"mrp": 35,
 				"srp": 25
+			},
+			{
+				"barcode": "1742",
+				"itemsubname": "1 kg",
+				"mrp": 64,
+				"srp": 54
 			}
 		],
 		"unit": ""
@@ -4542,12 +4414,6 @@
 				"itemsubname": "500 g",
 				"mrp": 33,
 				"srp": 24
-			},
-			{
-				"barcode": "1745",
-				"itemsubname": "1 kg",
-				"mrp": 59,
-				"srp": 49
 			}
 		],
 		"unit": ""
@@ -4574,19 +4440,6 @@
 				"itemsubname": "",
 				"mrp": 68,
 				"srp": 53
-			}
-		],
-		"unit": ""
-	},
-	"1753": {
-		"category": "GROCERY",
-		"itemname": "KANAN DEVAN GREEN -500.G",
-		"subs": [
-			{
-				"barcode": "1753",
-				"itemsubname": "",
-				"mrp": 147.5,
-				"srp": 138
 			}
 		],
 		"unit": ""
@@ -4628,21 +4481,9 @@
 		"itemname": "KANAN DEVAN",
 		"subs": [
 			{
-				"barcode": "1765",
-				"itemsubname": "CLASSIC 250 g",
-				"mrp": 76,
-				"srp": 76
-			},
-			{
 				"barcode": "1753",
 				"itemsubname": "GREEN 500 g",
 				"mrp": 147.5,
-				"srp": 138
-			},
-			{
-				"barcode": "3468",
-				"itemsubname": "RED 500 g",
-				"mrp": 146.5,
 				"srp": 138
 			},
 			{
@@ -4656,6 +4497,18 @@
 				"itemsubname": "",
 				"mrp": 30,
 				"srp": 30
+			},
+			{
+				"barcode": "1765",
+				"itemsubname": "CLASSIC 250 g",
+				"mrp": 76,
+				"srp": 76
+			},
+			{
+				"barcode": "3468",
+				"itemsubname": "RED 500 g",
+				"mrp": 146.5,
+				"srp": 138
 			}
 		],
 		"unit": ""
@@ -5076,10 +4929,10 @@
 				"srp": 39
 			},
 			{
-				"barcode": "1832",
-				"itemsubname": "250 mL",
-				"mrp": 105,
-				"srp": 105
+				"barcode": "1830",
+				"itemsubname": "",
+				"mrp": 39,
+				"srp": 39
 			},
 			{
 				"barcode": "1831",
@@ -5088,10 +4941,10 @@
 				"srp": 20
 			},
 			{
-				"barcode": "1830",
-				"itemsubname": "",
-				"mrp": 39,
-				"srp": 39
+				"barcode": "1832",
+				"itemsubname": "250 mL",
+				"mrp": 105,
+				"srp": 105
 			}
 		],
 		"unit": ""
@@ -5137,20 +4990,8 @@
 	},
 	"1835": {
 		"category": "GROCERY",
-		"itemname": "HORLICKS 1KG JAR",
+		"itemname": "HORLICKS JAR",
 		"subs": [
-			{
-				"barcode": "1835",
-				"itemsubname": "",
-				"mrp": 445,
-				"srp": 418
-			},
-			{
-				"barcode": "1835",
-				"itemsubname": "1 kg",
-				"mrp": 445,
-				"srp": 418
-			},
 			{
 				"barcode": "1834",
 				"itemsubname": "200 g",
@@ -5162,6 +5003,18 @@
 				"itemsubname": "500 g",
 				"mrp": 242,
 				"srp": 239
+			},
+			{
+				"barcode": "1835",
+				"itemsubname": "1 kg",
+				"mrp": 445,
+				"srp": 418
+			},
+			{
+				"barcode": "1835",
+				"itemsubname": "",
+				"mrp": 445,
+				"srp": 418
 			}
 		],
 		"unit": ""
@@ -8206,12 +8059,6 @@
 		"itemname": "LIBERTY GEE",
 		"subs": [
 			{
-				"barcode": "2428",
-				"itemsubname": "100 mL",
-				"mrp": 14,
-				"srp": 12
-			},
-			{
 				"barcode": "1784",
 				"itemsubname": "1 kg",
 				"mrp": 93,
@@ -8228,6 +8075,12 @@
 				"itemsubname": "500 mL",
 				"mrp": 0,
 				"srp": 48
+			},
+			{
+				"barcode": "2428",
+				"itemsubname": "100 mL",
+				"mrp": 14,
+				"srp": 12
 			},
 			{
 				"barcode": "2428",
@@ -8268,16 +8121,16 @@
 				"srp": 30
 			},
 			{
-				"barcode": "3284",
-				"itemsubname": "100 mL",
-				"mrp": 22,
-				"srp": 20
-			},
-			{
 				"barcode": "3283",
 				"itemsubname": "1 L",
 				"mrp": 95,
 				"srp": 90
+			},
+			{
+				"barcode": "3284",
+				"itemsubname": "100 mL",
+				"mrp": 22,
+				"srp": 20
 			}
 		],
 		"unit": ""
@@ -8414,8 +8267,14 @@
 	},
 	"2464": {
 		"category": "GROCERY",
-		"itemname": "KABSA MASALA",
+		"itemname": "KABSA MASALA ",
 		"subs": [
+			{
+				"barcode": "2464",
+				"itemsubname": "50 g",
+				"mrp": 38.5,
+				"srp": 36
+			},
 			{
 				"barcode": "2464",
 				"itemsubname": "50 gm",
@@ -8424,19 +8283,13 @@
 			},
 			{
 				"barcode": "3671",
-				"itemsubname": "20 g",
+				"itemsubname": "20 gm",
 				"mrp": 22,
 				"srp": 20
 			},
 			{
-				"barcode": "2464",
-				"itemsubname": "50 g",
-				"mrp": 38.5,
-				"srp": 36
-			},
-			{
 				"barcode": "3671",
-				"itemsubname": "20 gm",
+				"itemsubname": "20 g",
 				"mrp": 22,
 				"srp": 20
 			}
@@ -8506,16 +8359,16 @@
 				"srp": 75
 			},
 			{
-				"barcode": "2547",
-				"itemsubname": "25 g",
-				"mrp": 27,
-				"srp": 25
-			},
-			{
 				"barcode": "2474",
 				"itemsubname": "",
 				"mrp": 80,
 				"srp": 75
+			},
+			{
+				"barcode": "2547",
+				"itemsubname": "25 g",
+				"mrp": 27,
+				"srp": 25
 			}
 		],
 		"unit": ""
@@ -8557,10 +8410,10 @@
 		"itemname": "NAMBISAN GHEE",
 		"subs": [
 			{
-				"barcode": "2481",
-				"itemsubname": "500 mL",
-				"mrp": 390,
-				"srp": 370
+				"barcode": "2478",
+				"itemsubname": "50 mL",
+				"mrp": 48,
+				"srp": 46
 			},
 			{
 				"barcode": "2479",
@@ -8575,10 +8428,10 @@
 				"srp": 158
 			},
 			{
-				"barcode": "2478",
-				"itemsubname": "50 mL",
-				"mrp": 48,
-				"srp": 46
+				"barcode": "2481",
+				"itemsubname": "500 mL",
+				"mrp": 390,
+				"srp": 370
 			}
 		],
 		"unit": ""
@@ -9040,10 +8893,10 @@
 				"srp": 155
 			},
 			{
-				"barcode": "2568",
-				"itemsubname": "200 mL",
-				"mrp": 38,
-				"srp": 34
+				"barcode": "2566",
+				"itemsubname": "",
+				"mrp": 175,
+				"srp": 155
 			},
 			{
 				"barcode": "2567",
@@ -9052,10 +8905,10 @@
 				"srp": 85
 			},
 			{
-				"barcode": "2566",
-				"itemsubname": "",
-				"mrp": 175,
-				"srp": 155
+				"barcode": "2568",
+				"itemsubname": "200 mL",
+				"mrp": 38,
+				"srp": 34
 			}
 		],
 		"unit": ""
@@ -9256,16 +9109,16 @@
 		"itemname": "AJMI STEAM PUTTU ",
 		"subs": [
 			{
-				"barcode": "2636",
-				"itemsubname": "500 g",
-				"mrp": 34.5,
-				"srp": 28
-			},
-			{
 				"barcode": "2635",
 				"itemsubname": "1 kg",
 				"mrp": 68,
 				"srp": 55
+			},
+			{
+				"barcode": "2636",
+				"itemsubname": "500 g",
+				"mrp": 34.5,
+				"srp": 28
 			}
 		],
 		"unit": ""
@@ -9563,6 +9416,24 @@
 		"itemname": "LIQ COLOUR",
 		"subs": [
 			{
+				"barcode": "2752",
+				"itemsubname": "LEMON 50 mL",
+				"mrp": 50,
+				"srp": 40
+			},
+			{
+				"barcode": "2745",
+				"itemsubname": "RASPBERRY RED 50 mL",
+				"mrp": 0,
+				"srp": 35
+			},
+			{
+				"barcode": "2748",
+				"itemsubname": "ROSE 50 mL",
+				"mrp": 0,
+				"srp": 50
+			},
+			{
 				"barcode": "2751",
 				"itemsubname": "VIOLET 50 mL",
 				"mrp": 0,
@@ -9575,28 +9446,10 @@
 				"srp": 35
 			},
 			{
-				"barcode": "2745",
-				"itemsubname": "RASPBERRY RED 50 mL",
-				"mrp": 0,
-				"srp": 35
-			},
-			{
 				"barcode": "3872",
 				"itemsubname": "RED 50 mL",
 				"mrp": 50,
 				"srp": 40
-			},
-			{
-				"barcode": "2752",
-				"itemsubname": "LEMON 50 mL",
-				"mrp": 50,
-				"srp": 40
-			},
-			{
-				"barcode": "2748",
-				"itemsubname": "ROSE 50 mL",
-				"mrp": 0,
-				"srp": 50
 			}
 		],
 		"unit": ""
@@ -9785,12 +9638,6 @@
 		"itemname": "NESCAFE",
 		"subs": [
 			{
-				"barcode": "2792",
-				"itemsubname": "100 g",
-				"mrp": 0,
-				"srp": 290
-			},
-			{
 				"barcode": "2041",
 				"itemsubname": "25 g",
 				"mrp": 72,
@@ -9801,6 +9648,12 @@
 				"itemsubname": "50 g",
 				"mrp": 150,
 				"srp": 150
+			},
+			{
+				"barcode": "2792",
+				"itemsubname": "100 g",
+				"mrp": 0,
+				"srp": 290
 			}
 		],
 		"unit": ""
@@ -10466,7 +10319,7 @@
 	},
 	"2957": {
 		"category": "GROCERY",
-		"itemname": "HOLICKS OATS 1 KG",
+		"itemname": "HOLIKS OATES 1 KG",
 		"subs": [
 			{
 				"barcode": "2957",
@@ -11390,22 +11243,16 @@
 		"itemname": "RKG GHEE",
 		"subs": [
 			{
-				"barcode": "3221",
-				"itemsubname": "1 L",
-				"mrp": 668,
-				"srp": 580
-			},
-			{
-				"barcode": "1778",
-				"itemsubname": "100 mL",
-				"mrp": 0,
-				"srp": 75
-			},
-			{
 				"barcode": "1777",
 				"itemsubname": "200 mL",
 				"mrp": 140,
 				"srp": 135
+			},
+			{
+				"barcode": "1779",
+				"itemsubname": "50 mL",
+				"mrp": 45,
+				"srp": 45
 			},
 			{
 				"barcode": "1776",
@@ -11414,10 +11261,16 @@
 				"srp": 295
 			},
 			{
-				"barcode": "1779",
-				"itemsubname": "50 mL",
-				"mrp": 45,
-				"srp": 45
+				"barcode": "1778",
+				"itemsubname": "100 mL",
+				"mrp": 0,
+				"srp": 75
+			},
+			{
+				"barcode": "3221",
+				"itemsubname": "1 L",
+				"mrp": 668,
+				"srp": 580
 			}
 		],
 		"unit": ""
@@ -11712,7 +11565,7 @@
 	},
 	"3328": {
 		"category": "GROCERY",
-		"itemname": "MUTTON MASALA ",
+		"itemname": "MUTTON MASALA ETRN 50 GR",
 		"subs": [
 			{
 				"barcode": "3328",
@@ -12590,19 +12443,6 @@
 		],
 		"unit": ""
 	},
-	"3606": {
-		"category": "GROCERY",
-		"itemname": "MILMA GEE 500ML",
-		"subs": [
-			{
-				"barcode": "3606",
-				"itemsubname": "",
-				"mrp": 305,
-				"srp": 295
-			}
-		],
-		"unit": ""
-	},
 	"3607": {
 		"category": "GROCERY",
 		"itemname": "SABOONARI 1-ST BIG",
@@ -12735,14 +12575,8 @@
 	},
 	"3644": {
 		"category": "GROCERY",
-		"itemname": "MANDHI RISE KIT BISMI 1 KG",
+		"itemname": "MANDI RICE KIT BISMI 1 KG",
 		"subs": [
-			{
-				"barcode": "3644",
-				"itemsubname": "",
-				"mrp": 160,
-				"srp": 110
-			},
 			{
 				"barcode": "3644",
 				"itemsubname": "",
@@ -12754,14 +12588,8 @@
 	},
 	"3645": {
 		"category": "GROCERY",
-		"itemname": "KABSA RISE KIT BISMI 1KG",
+		"itemname": "KABSA RICE KIT BISMI 1KG",
 		"subs": [
-			{
-				"barcode": "3645",
-				"itemsubname": "",
-				"mrp": 145,
-				"srp": 95
-			},
 			{
 				"barcode": "3645",
 				"itemsubname": "",
@@ -12851,37 +12679,6 @@
 				"itemsubname": "",
 				"mrp": 33,
 				"srp": 30
-			}
-		],
-		"unit": ""
-	},
-	"3661": {
-		"category": "GROCERY",
-		"itemname": "PAVITRAM OIL",
-		"subs": [
-			{
-				"barcode": "3661",
-				"itemsubname": "1 L",
-				"mrp": 225,
-				"srp": 205
-			},
-			{
-				"barcode": "1644",
-				"itemsubname": "100 mL",
-				"mrp": 26,
-				"srp": 25
-			},
-			{
-				"barcode": "3660",
-				"itemsubname": "200 mL",
-				"mrp": 50,
-				"srp": 45
-			},
-			{
-				"barcode": "3659",
-				"itemsubname": "500 mL",
-				"mrp": 116,
-				"srp": 102
 			}
 		],
 		"unit": ""
@@ -13188,12 +12985,6 @@
 		"itemname": "MILMA GEE ",
 		"subs": [
 			{
-				"barcode": "3716",
-				"itemsubname": "50 mL",
-				"mrp": 36,
-				"srp": 36
-			},
-			{
 				"barcode": "3606",
 				"itemsubname": "500 mL",
 				"mrp": 305,
@@ -13201,7 +12992,7 @@
 			},
 			{
 				"barcode": "3716",
-				"itemsubname": "",
+				"itemsubname": "50 mL",
 				"mrp": 36,
 				"srp": 36
 			}
@@ -13334,12 +13125,6 @@
 				"itemsubname": "",
 				"mrp": 20,
 				"srp": 20
-			},
-			{
-				"barcode": "3764",
-				"itemsubname": "",
-				"mrp": 20,
-				"srp": 20
 			}
 		],
 		"unit": ""
@@ -13374,12 +13159,6 @@
 		"category": "GROCERY",
 		"itemname": "PALADA SURAJ 200G",
 		"subs": [
-			{
-				"barcode": "3774",
-				"itemsubname": "",
-				"mrp": 35,
-				"srp": 35
-			},
 			{
 				"barcode": "3774",
 				"itemsubname": "",
@@ -13503,12 +13282,6 @@
 		"category": "GROCERY",
 		"itemname": "HORLICS JUNIOR 500G",
 		"subs": [
-			{
-				"barcode": "3800",
-				"itemsubname": "",
-				"mrp": 288,
-				"srp": 288
-			},
 			{
 				"barcode": "3800",
 				"itemsubname": "",
